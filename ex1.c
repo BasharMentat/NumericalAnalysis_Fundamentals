@@ -3,6 +3,7 @@
 
 double overflow(double x, double y)
 {
+    double t;
 
 /************************************
  * This is a function that calculates
@@ -29,11 +30,13 @@ double overflow(double x, double y)
     
 }
 
-double Taylor_Term()
-
-
-int main()
+int main(void)
 {
-    return 0;
-
+    double x,y;
+    
+    printf("Introduce two double precision numbers: ");
+    scanf("%e,%e", &x , &y);
+    printf("the radius of the circle centered at 0 going through (%e,%e) is : %e", x,y, overflow(x,y));
+    
+    
 }
